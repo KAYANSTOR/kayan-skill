@@ -1,6 +1,6 @@
 # Skill Sources
 
-This catalog contains selected skill directories copied from the following public repositories:
+Selected skill directories are copied from these public repositories:
 
 - `obra/superpowers`
 - `DietrichGebert/ponytail`
@@ -11,7 +11,10 @@ This catalog contains selected skill directories copied from the following publi
 - `nextlevelbuilder/ui-ux-pro-max-skill`
 - `pbakaus/impeccable`
 - `anthropics/skills`
+- `anthropics/knowledge-work-plugins`
 - `emilkowalski/skills`
 - `vercel-labs/agent-skills`
+- `figma/mcp-server-guide`
+- `adobe/skills`
 
-The exact source repository and selected skill name are represented by the destination directory names and the original skill contents. The `figma-adobe-tools` set remains pending until the referenced 01–24 list is supplied.
+`request-refactor-plan` was intentionally omitted because it is no longer present in `mattpocock/skills`.
