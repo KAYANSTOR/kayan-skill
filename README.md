@@ -4,7 +4,7 @@
 
 - [`01-Core-Workflows/`](./01-Core-Workflows/): سير العمل الأساسي والمهام العامة التي يعتمد عليها الوكيل.
 - [`02-Architecture-Quality/`](./02-Architecture-Quality/): الهندسة المعمارية، جودة الكود، الاختبارات، والأمان والأداء.
-- [`03-UI-UX-Design/`](./03-UI-UX-Design/): مهارات تصميم واجهات المستخدم وتجربة المستخدم.
+- [`03-UI-UX-Design/`](./03-UI-UX-Design/): مهارات تصميم واجهات المستخدم وتجربة المستخدم، بما فيها [`mobile-first-card-ui-architecture`](./03-UI-UX-Design/ui/mobile-first-card-ui-architecture/).
 - [`04-Web-Frameworks/`](./04-Web-Frameworks/): أطر وأدوات تطوير الويب مثل React وNext.js.
 
 - [`DOCUMENTATION.md`](./DOCUMENTATION.md): دليل تفصيلي لدمج المهارات مع Claude Code وCursor وCodex وGemini CLI والوكلاء السحابيين، مع إرشادات Figma وAdobe وOpenCodeReview.
