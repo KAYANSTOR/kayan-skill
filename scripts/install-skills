@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+"""Install catalog categories into a project without flattening skill paths."""
+from __future__ import annotations
+
+import argparse
+import shutil
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CATEGORIES = sorted(p for p in ROOT.iterdir() if p.is_dir() and p.name[:2].isdigit() and p.name[2:3] == "-")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--destination", default=".agent/skills", help="destination relative to the current directory")
+    parser.add_argument("--category", action="append", help="category name; repeat to select several")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true", help="replace selected existing category directories")
+    args = parser.parse_args()
+    selected = CATEGORIES
+    if args.category:
+        by_name = {p.name: p for p in CATEGORIES}
+        missing = [name for name in args.category if name not in by_name]
+        if missing:
+            parser.error("unknown category: " + ", ".join(missing))
+        selected = [by_name[name] for name in args.category]
+    destination = Path(args.destination).expanduser().resolve()
+    conflicts = [destination / category.name for category in selected if (destination / category.name).exists()]
+    if conflicts and not args.force:
+        print("Refusing to overwrite existing categories; use --force only after reviewing the diff:", file=sys.stderr)
+        for path in conflicts:
+            print(f"  {path}", file=sys.stderr)
+        return 2
+    if args.dry_run:
+        print(f"Would install {len(selected)} categories into {destination}")
+        for category in selected:
+            print(f"  {category.name} -> {destination / category.name}")
+        return 0
+    destination.mkdir(parents=True, exist_ok=True)
+    for category in selected:
+        target = destination / category.name
+        if target.exists():
+            shutil.rmtree(target)
+        shutil.copytree(category, target, symlinks=False)
+        print(f"Installed {category.name}")
+    print(f"Installed {len(selected)} categories into {destination}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

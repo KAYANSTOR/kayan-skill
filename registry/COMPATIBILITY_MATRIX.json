@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "policy": "Verify the installed tool version before relying on automatic skill discovery.",
+  "platforms": [
+    {"name": "Claude Code", "project_path": ".agent/skills", "discovery": "explicit-path-or-version-specific-agent-skills", "status": "needs-version-verification"},
+    {"name": "Codex", "project_path": ".agent/skills", "discovery": "explicit-path-or-version-specific-agent-skills", "status": "needs-version-verification"},
+    {"name": "Cursor", "project_path": ".agent/skills", "discovery": "explicit-path-or-prompt", "status": "needs-version-verification"},
+    {"name": "Gemini CLI", "project_path": ".agent/skills", "discovery": "extension-or-explicit-path", "status": "needs-version-verification"},
+    {"name": "VS Code", "project_path": ".agent/skills", "discovery": "agent-extension-or-explicit-path", "status": "needs-extension-verification"},
+    {"name": "Antigravity", "project_path": ".agent/skills", "discovery": "version-specific-agent-skills", "status": "needs-version-verification"},
+    {"name": "Manus / cloud agents", "project_path": ".agent/skills", "discovery": "explicit-path", "status": "supported-by-explicit-instructions"},
+    {"name": "Generic agent", "project_path": ".agent/skills", "discovery": "read-SKILL.md-explicitly", "status": "supported-by-explicit-instructions"}
+  ]
+}

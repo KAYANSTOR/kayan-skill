@@ -1,3 +1,8 @@
+---
+name: impeccable-optimize
+description: Impeccable optimize UI quality skill. Use when auditing or improving web interface implementation with the optimize workflow.
+---
+
 Performance is a feature. Identify the actual bottleneck for THIS interface, fix it, then measure. Don't optimize what isn't slow.
 
 ## Assess Performance Issues

@@ -1,3 +1,8 @@
+---
+name: impeccable-clarify
+description: Impeccable clarify UI quality skill. Use when auditing or improving web interface implementation with the clarify workflow.
+---
+
 > **Additional context needed**: audience knowledge and emotional state.
 
 Rewrite unclear interface text so users understand what happened, what matters, and what to do next. Preserve factual meaning, product terminology, and brand voice.

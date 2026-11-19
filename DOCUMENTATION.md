@@ -1,321 +1,162 @@
-# دليل دمج كتالوج `kayan-skill` مع أدوات التطوير
+# دليل دمج وإدارة كتالوج `kayan-skill`
 
-هذا الدليل يشرح كيفية استخدام المهارات الموجودة في هذا المستودع مع أدوات البرمجة والوكلاء المحليين والسحابيين. صُمم الدليل أولاً للاستخدام من الهاتف: يكون المستخدم مديراً للمشروع، بينما ينفذ الوكيل السحابي أو بيئة التطوير المعزولة خطوات الإعداد والفحص.
+هذا الدليل يشرح كيف تُكتشف المهارات وتُثبت وتُراجع بأمان مع أدوات التطوير والوكلاء المحليين والسحابيين. الكتالوج مصدر ملفات وتعليمات؛ وجود `SKILL.md` لا يعني أن الأداة ستستدعيه تلقائياً.
 
-> **مبدأ أساسي:** وجود ملف `SKILL.md` داخل المستودع لا يعني أن الأداة ستستدعيه تلقائياً. يجب تجهيز المهارة في مجلد المهارات الذي تدعمه الأداة، أو توجيه الوكيل صراحة إلى قراءة الملف وتطبيقه.
-
-## 1. بنية الكتالوج
-
-يحتوي المستودع على أربع مجموعات رئيسية:
+## 1. البنية المعتمدة
 
 ```text
 kayan-skill/
-├── 01-Core-Workflows/       # التخطيط، الاختبار، التصحيح، المراجعة، التفويض
-├── 02-Architecture-Quality/ # المعمارية، الجودة، الأمان، الأداء، الاختبارات
-├── 03-UI-UX-Design/         # التصميم، UX، الأنظمة البصرية، الحركات
-├── 04-Web-Frameworks/       # React وواجهات الويب وأنماط التركيب
-├── MASTER_AGENT_INSTRUCTIONS.md
-├── SKILL_SOURCES.md
-└── DOCUMENTATION.md
+├── 00-MASTER/                 # السياسات المركزية والتوافق والصلاحيات
+├── 01-Core-Workflows/         # التخطيط والاختبار والتصحيح والمراجعة
+├── 02-Architecture-Quality/   # المعمارية وجودة الكود والأداء والأمان
+├── 03-UI-UX-Design/           # UI/UX وFigma وAdobe والحركات
+├── 04-Web-Frameworks/         # React وNext وأنماط تركيب الويب
+├── 05-AI-Infrastructure/     # البوابات والموجهات وأدوات النماذج
+├── 06-Code-Analysis/          # Graphify وتحليل قواعد الكود
+├── 07-SEO-Marketing/          # SEO وGEO والمحتوى والتجارة
+├── 08-Security-Auditing/     # التدقيق الأمني وSAST والثغرات
+├── registry/                  # سجل المهارات والمصادر والتوافق
+├── scripts/                   # التثبيت والتحقق والتدقيق والتحديث الآمن
+├── tests/                     # اختبارات الكتالوج نفسه
+└── .github/workflows/         # تحقق تلقائي عند Push وPull Request
 ```
 
-كل مهارة قابلة للقراءة تبدأ عادةً من:
+كل مهارة أساسية تبدأ من `<skill-path>/SKILL.md` وقد تعتمد على `references/` أو `scripts/` أو `assets/`. انسخ مجلد المهارة كاملاً ولا تنسخ الملف وحده.
 
-```text
-<skill-name>/SKILL.md
-```
+## 2. التثبيت الصحيح في مشروع
 
-وقد تحتوي أيضاً على مجلدات `references/` أو `scripts/` أو `assets/`. عند دمج مهارة، انسخ مجلد المهارة كاملاً، وليس ملف `SKILL.md` وحده، حتى تبقى مراجعها وملفاتها المساعدة متاحة.
-
-## 2. اختيار المهارة المناسبة
-
-استخدم المجموعة الأولى عندما تكون المهمة مرتبطة بسير العمل: العصف الذهني، كتابة خطة، التطوير بالاختبارات، التصحيح المنهجي، التحقق قبل الإكمال، أو مراجعة الكود.
-
-استخدم المجموعة الثانية عندما تحتاج إلى تحليل بنية المشروع أو جودة التنفيذ أو الأمان أو الأداء. من أمثلتها `architecture-patterns` و`code-review-and-quality` و`security-and-hardening` و`performance-optimization`.
-
-استخدم المجموعة الثالثة عند مراجعة واجهة أو نظام تصميم أو تجربة مستخدم أو حركة. من أمثلتها `frontend-design` ومهارات `emil-kowalski` و`design-critique` و`accessibility-review`.
-
-استخدم المجموعة الرابعة في مشاريع React وواجهات الويب، خصوصاً `react-best-practices` و`composition-patterns` و`web-design-guidelines`.
-
-قبل تشغيل أي مهارة، اطلب من الوكيل قراءة ملفها ثم تحديد الملفات التي سيطبق عليها المهارة. لا تفترض أن اسم المهارة وحده يشرح كل القيود أو المخرجات المطلوبة.
-
-## 3. الدمج العام مع أي وكيل أو بيئة Linux سحابية
-
-هذه الطريقة مناسبة لـ Manus أو أي وكيل يعمل في Sandbox أو Cloud Computer. لا تحتاج إلى تثبيت أدوات على الهاتف.
-
-### 3.1 تجهيز مهارات المشروع
-
-نفّذ الخطوات التالية داخل بيئة الوكيل، وليس على الهاتف:
+نفذ الأوامر داخل بيئة التطوير أو الوكيل، وليس على الهاتف. يحافظ المثبت على اسم المجموعة، ولذلك لا يحدث تعارض بين مهارتين لهما الاسم نفسه ولا تنكسر المسارات المذكورة في التقارير.
 
 ```bash
 set -e
 cd /path/to/project
-
 git clone https://github.com/KAYANSTOR/kayan-skill.git /tmp/kayan-skill
-mkdir -p .agent/skills
-
-cp -a /tmp/kayan-skill/01-Core-Workflows/. .agent/skills/
-cp -a /tmp/kayan-skill/02-Architecture-Quality/. .agent/skills/
-cp -a /tmp/kayan-skill/03-UI-UX-Design/. .agent/skills/
-cp -a /tmp/kayan-skill/04-Web-Frameworks/. .agent/skills/
-```
-
-إذا كان المشروع يستخدم مستودعاً موجوداً مسبقاً للمهارات، حدّثه بدلاً من استنساخه مرة أخرى. يمكن التحقق من النتيجة بالأمر التالي:
-
-```bash
+python /tmp/kayan-skill/scripts/install-skills --destination .agent/skills --dry-run
+python /tmp/kayan-skill/scripts/install-skills --destination .agent/skills
 find .agent/skills -type f -name SKILL.md | sort
 ```
 
-### 3.2 رسالة جاهزة للوكيل السحابي
-
-يمكن نسخ النص التالي إلى محادثة الوكيل:
-
-```text
-أريدك أن تجهز بيئة العمل السحابية لهذا المشروع كالتالي:
-1. اعمل Clone لمستودع المهارات من:
-   https://github.com/KAYANSTOR/kayan-skill.git
-2. أنشئ مجلد .agent/skills داخل مساحة عمل المشروع.
-3. انسخ محتويات 01-Core-Workflows و02-Architecture-Quality
-   و03-UI-UX-Design و04-Web-Frameworks إلى .agent/skills.
-4. تحقق من وجود ملفات SKILL.md وأخبرني بعددها ومساراتها.
-5. لا تعدل ملفات المشروع بعد الإعداد؛ انتظر موافقتي.
-```
-
-## 4. دمج Figma وAdobe
-
-توجد مهارات Figma وAdobe في:
-
-```text
-03-UI-UX-Design/figma-adobe-tools/
-```
-
-قبل استخدام مهارات Figma، يجب أن تكون أداة Figma MCP أو التكامل الذي تستخدمه الأداة مهيأً ومصادقاً عليه. مثال عنوان خادم Figma MCP:
-
-```text
-https://mcp.figma.com/mcp
-```
-
-### Claude Code
-
-يمكن استخدام إضافة Figma الرسمية، أو إعداد MCP يدوياً:
+لتثبيت مجموعة محددة:
 
 ```bash
-claude plugin install figma@claude-plugins-official
+python /tmp/kayan-skill/scripts/install-skills \
+  --destination .agent/skills \
+  --category 01-Core-Workflows \
+  --category 02-Architecture-Quality
 ```
 
-أو:
+إذا كان `.agent/skills` يحتوي على نسخ سابقة، راجع الفرق أولاً. لا تستخدم `--force` إلا بعد حفظ التغييرات المحلية ومراجعة أن الاستبدال مقصود.
+
+المسارات بعد التثبيت تكون من الشكل التالي:
+
+```text
+.agent/skills/01-Core-Workflows/verification-before-completion/SKILL.md
+.agent/skills/02-Architecture-Quality/security-and-hardening/SKILL.md
+.agent/skills/03-UI-UX-Design/ui/mobile-first-card-ui-architecture/SKILL.md
+.agent/skills/08-Security-Auditing/cloudflare/security-audit/SKILL.md
+```
+
+## 3. اختيار المهارة من المجموعات الثماني
+
+| المجموعة | استخدمها عندما تحتاج إلى |
+| --- | --- |
+| `01-Core-Workflows` | عصف ذهني، خطة تنفيذ، TDD، تصحيح منهجي، مراجعة، أو تحقق قبل الإكمال |
+| `02-Architecture-Quality` | تصميم معماري، جودة كود، تبسيط، أداء، اختبار متصفح، أو مراجعة أمان عامة |
+| `03-UI-UX-Design` | تصميم واجهة، RTL، أنظمة تصميم، Figma/Adobe، حركات وتجربة استخدام |
+| `04-Web-Frameworks` | React، Next.js، composition patterns، أو إرشادات واجهات الويب |
+| `05-AI-Infrastructure` | بوابة LLM، توجيه نماذج، مزودات، مفاتيح، حدود استخدام، أو OmniRoute |
+| `06-Code-Analysis` | بناء رسم بياني معرفي لقاعدة كود أو الاستعلام عن علاقات الملفات |
+| `07-SEO-Marketing` | Technical SEO، GEO، E-E-A-T، Schema، Sitemap، محتوى، منافسين أو تجارة إلكترونية |
+| `08-Security-Auditing` | SAST، CodeQL، Semgrep، CVSS، threat modeling، سلسلة توريد أو فرز ثغرات |
+
+لا تطلب من الوكيل قراءة الكتالوج كله. اختر مهارة أو مهارتين، واقرأ ملفهما، ثم اذكر نطاق الملفات ونوع المخرج المطلوب.
+
+## 4. سجل المهارات والمصادر
+
+السجل المركزي هو [`registry/SKILLS_REGISTRY.json`](./registry/SKILLS_REGISTRY.json). لكل سجل مسار المهارة ووصفها ومجموعتها وتبعياتها المحتملة وحالة التحقق ومعلومة المصدر. تستخدم المسارات كمعرفات ثابتة عند وجود أسماء مكررة.
+
+- `registry/SOURCES_MANIFEST.json`: المستودعات الأصلية، نوع النقل، وحالة مراجعة Commit/Tag والترخيص.
+- `registry/COMPATIBILITY_MATRIX.json`: المسار المقترح وطريقة الاكتشاف وحالة التوافق لكل أداة.
+- `scripts/audit-sources`: تقرير الحقول التي تحتاج مراجعة بشرية.
+
+شغّل إعادة بناء السجل بعد إضافة مهارة أو تغيير metadata:
+
+```bash
+python scripts/build_registry.py
+python scripts/validate-skills
+```
+
+لا تُملأ معلومات Commit أو License بالتخمين. راجع المصدر الأصلي، ثم حدّث manifest في نفس التغيير.
+
+## 5. Claude Code وCodex وCursor وGemini وVS Code وAntigravity وManus
+
+المسار المشترك الآمن هو `.agent/skills/`. بعض الإصدارات تدعم الاكتشاف التلقائي وبعضها يحتاج توجيهاً صريحاً؛ راجع [`00-MASTER/AGENT_COMPATIBILITY.md`](./00-MASTER/AGENT_COMPATIBILITY.md) وإصدار الأداة قبل الاعتماد على الاكتشاف.
+
+استخدم رسالة صريحة عند عدم معرفة دعم الأداة:
+
+```text
+قبل التنفيذ اقرأ:
+.agent/skills/00-MASTER/SECURITY_POLICY.md
+.agent/skills/00-MASTER/WORKFLOW_POLICY.md
+.agent/skills/02-Architecture-Quality/code-review-and-quality/SKILL.md
+
+حلل الملفات المحددة فقط. أخرج تقريراً وخطة، ولا تعدل أو تثبت أو تعمل Commit.
+```
+
+في Manus والوكلاء السحابيين، ثبّت المهارات داخل مساحة العمل المعزولة واترك الهاتف مديراً للموافقة. لا تضع مفاتيح API أو رموز OAuth داخل الكتالوج.
+
+## 6. تكاملات Figma وAdobe
+
+تقع مهارات Figma وAdobe في `03-UI-UX-Design/figma-adobe-tools/`. قبل استخدامها تحقق من MCP أو تكامل التطبيق والمصادقة:
 
 ```bash
 claude mcp add --transport http figma https://mcp.figma.com/mcp
 claude mcp list
 ```
 
-بعد التهيئة، اطلب من الوكيل قراءة المهارة المطلوبة، ثم أرسل رابط إطار Figma أو `node-id` المناسب. مثال:
+قد تختلف أوامر Claude وCursor وGemini حسب الإصدار؛ لا تنقل بيانات الاعتماد إلى Git. اقرأ `03-UI-UX-Design/CONNECTORS.md` والمهارة المطلوبة، ثم اطلب خطة قبل أي تعديل.
 
-```text
-اقرأ:
-.agent/skills/03-UI-UX-Design/figma-adobe-tools/09-figma-design-to-code/SKILL.md
-ثم استخرج سياق التصميم من رابط Figma التالي، وأنشئ خطة تنفيذ فقط دون تعديل الملفات:
-<FIGMA_URL>
-```
+## 7. OpenCodeReview وAI Infrastructure
 
-### Cursor
+توجد مهارة التفويض في `01-Core-Workflows/alibaba-open-code-review/`. اتبع تعليماتها وتحقق من وجود Node.js قبل التثبيت. أدوات `05-AI-Infrastructure` توثق بوابات وموجهات LLM لكنها لا تمنح مفاتيح أو خدمة مجانية تلقائياً؛ راجع التبعيات والحدود والخصوصية قبل الاتصال بمزود.
 
-يمكن تثبيت إضافة Figma الرسمية من محادثة الوكيل:
+## 8. SEO وتحليل الكود والأمان
 
-```text
-/add-plugin figma
-```
+تحتوي `07-SEO-Marketing/claude-seo/skills/` على مهارات SEO متعددة. اختر `seo-technical` أو `seo-geo` أو `seo-schema` حسب المهمة ولا تفترض أن كل API متاح.
 
-أو إضافة خادم MCP يدوياً من إعدادات Cursor باستخدام:
+يحتوي `06-Code-Analysis/graphify/` على توثيق Graphify ومسارات الوكلاء. استخدمه لفهم علاقات قاعدة الكود قبل قراءة آلاف الملفات، مع الحفاظ على وضع القراءة فقط.
 
-```json
-{
-  "mcpServers": {
-    "figma": {
-      "url": "https://mcp.figma.com/mcp"
-    }
-  }
-}
-```
+ابدأ مهام الأمان من `08-Security-Auditing/README.md` ثم اقرأ `00-MASTER/SECURITY_POLICY.md`. نفّذ الفحص فقط على أنظمة مصرح بها، وتعامل مع النتائج كفرضيات تحتاج تحققاً.
 
-إذا كانت نسخة Cursor لا تستخدم مجلد `.agent/skills` تلقائياً، اترك الكتالوج في المستودع واطلب صراحة قراءة المسار الكامل للمهارة في كل مهمة.
+## 9. دورة العمل والصلاحيات
 
-### Gemini CLI
+1. اقرأ السياسات المركزية ثم نفذ تدقيقاً قراءة فقط.
+2. حدد المهارات المطلوبة ونطاق الملفات والأدوات الخارجية.
+3. أخرج تقريراً يذكر الملف والسطر والدليل والأثر ودرجة الخطر.
+4. اطلب موافقة صريحة قبل التعديل أو التثبيت أو Commit أو Push.
+5. نفذ التغيير المحدد فقط وشغّل الاختبارات المناسبة.
+6. راجع الفرق وسجّل المهارات المستخدمة.
 
-يمكن تثبيت إضافة Figma الرسمية:
+مهارة `subagent-driven-development` لا تمنح صلاحية Commit. أي عبارة عن Commit داخل مهارة فرعية مشروطة بسياسة المشروع وموافقة المستخدم.
+
+## 10. التحقق وCI
+
+التحقق المركزي لا ينفذ أي سكربت من المهارات؛ يفحص metadata، المسارات، الروابط المحلية، التكرارات، والسجل:
 
 ```bash
-gemini extensions install https://github.com/figma/mcp-server-guide
+python scripts/validate-skills
+python -m unittest discover -s tests -p 'test_*.py' -v
+python -m compileall -q scripts tests
 ```
 
-ثم من داخل Gemini CLI:
+يُشغّل GitHub Actions نفس الفحوص عند كل Push وPull Request. لا تُضاف اختبارات تشغّل كوداً من المهارات الخارجية تلقائياً.
 
-```text
-/mcp auth figma
-```
+## 11. التحديث والإصدارات
 
-بعد نجاح المصادقة، استخدم توجيهاً يذكر مسار `SKILL.md` المطلوب ورابط التصميم. لا تنقل مفاتيح المصادقة إلى المستودع.
+`scripts/update-skills --check` يعرض خطة مراجعة فقط. `--apply` مرفوض عمداً؛ لا يُستبدل محتوى محلي بنسخة upstream آلياً. حدّث مهارة واحدة بعد مراجعة فرق المصدر والترخيص والاعتماديات، ثم شغّل المدقق وسجّل التغيير.
 
-### Adobe
+الإصدارات موثقة في [`CHANGELOG.md`](./CHANGELOG.md). استخدم SemVer عند إنشاء Tags أو Releases بعد موافقة مالك المستودع.
 
-تتطلب مهارات Adobe وجود تكامل Adobe Creative Cloud مناسب. مهارات مثل `adobe-fonts` و`adobe-create-social-variations` و`adobe-batch-edit-photos` تشرح الأدوات والمدخلات المطلوبة داخل ملفاتها. يجب قراءة الملف أولاً والتأكد من أن موصل Adobe متصل قبل تنفيذ أي عملية على ملفات المستخدم.
+## 12. استكشاف الأخطاء
 
-## 5. دمج Claude Code وCursor وCodex والوكلاء العامة
-
-### Claude Code
-
-يمكن وضع المهارات في مجلد المهارات الخاص بالمشروع إذا كان إصدار Claude Code لديك يدعم Agent Skills. إن لم يكن، استخدم مجلداً محلياً مثل `.agent/skills` ووجّه الوكيل إلى الملف صراحةً:
-
-```text
-اقرأ ملف:
-.agent/skills/02-Architecture-Quality/security-and-hardening/SKILL.md
-طبّق منهجية الفحص على المشروع، وأعد تقريراً فقط دون تعديل.
-```
-
-### Cursor
-
-ضع الملفات في مجلد المشروع أو في مسار المهارات الذي تعتمد عليه نسخة Cursor لديك. الأفضل أن يكون المسار داخل المستودع حتى يمكن مراجعته ومشاركته. اذكر في الطلب اسم المهارة ومسار `SKILL.md`، ثم حدد هل المطلوب تحليل أو خطة أو تعديل فعلي.
-
-### Codex وأدوات الوكلاء القابلة للتهيئة
-
-تختلف أسماء مجلد المهارات بين الإصدارات. استخدم أحد الخيارين التاليين:
-
-1. ضع المهارات في مجلد المهارات الرسمي الذي توضحه وثائق الأداة.
-2. اتركها في `.agent/skills` واستخدم توجيهاً صريحاً مثل:
-
-```text
-قبل تنفيذ المهمة، اقرأ:
-.agent/skills/01-Core-Workflows/verification-before-completion/SKILL.md
-.agent/skills/02-Architecture-Quality/code-review-and-quality/SKILL.md
-ثم طبّق التعليمات على الملفات المستهدفة.
-```
-
-لا تعتمد على تخمين مسار خاص بالأداة. تحقق من وثائق الإصدار المستخدم أولاً، لأن دعم Agent Skills وMCP قد يتغير بين الإصدارات.
-
-### وكلاء عامون أو Manus
-
-في البيئات السحابية، تعامل مع الوكيل كمهندس ينفذ داخل مساحة معزولة. أعطه ثلاثة أشياء في كل مهمة:
-
-- مسار المهارة أو المهارات التي يجب قراءتها.
-- نطاق الملفات التي يسمح بفحصها أو تعديلها.
-- نوع المخرجات المطلوبة: تقرير، خطة، Patch، أو تنفيذ كامل.
-
-## 6. تفعيل OpenCodeReview في وضع التفويض
-
-مهارة Alibaba موجودة في:
-
-```text
-.agent/skills/01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate/SKILL.md
-```
-
-في بيئة Linux سحابية، يمكن طلب تثبيت الأداة وتشغيلها دون API Keys وفق تعليمات المهارة:
-
-```bash
-node --version
-npm install -g @alibaba-group/open-code-review
-cd /path/to/project
-ocr delegate preview --format json > /tmp/ocr-preview.json
-ocr delegate rule --format json > /tmp/ocr-rules.json
-```
-
-رسالة تشغيل جاهزة:
-
-```text
-ثبّت أداة OpenCodeReview في بيئة Linux السحابية.
-اقرأ ملف:
-.agent/skills/01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate/SKILL.md
-ثم شغّل:
-ocr delegate preview --format json
-ocr delegate rule --format json
-احفظ النتائج في ملفات مؤقتة، ولا تعدل كود المشروع بعد.
-```
-
-اعتبر ملفات JSON الناتجة مدخلات للمراجعة، وليست موافقة على تعديل الكود. راجع محتواها قبل استخدام أي قاعدة على مشروع حقيقي، ولا ترفع الملفات المؤقتة أو أي أسرار إلى Git.
-
-## 7. البرومبت الشامل للمراجعة الهندسية
-
-بعد تجهيز المهارات واستخراج قواعد OpenCodeReview، استخدم توجيهاً منظماً مثل التالي:
-
-```text
-اعمل كفريق هندسي متكامل: مهندس معماري، مهندس أمن، مصمم UI/UX، مهندس QA، ومهندس أداء.
-
-1. اقرأ MASTER_AGENT_INSTRUCTIONS.md في جذر المشروع والتزم بضوابطه.
-2. لا تعدل أي ملف ولا تنفذ Commit قبل موافقتي الصريحة.
-3. اقرأ مهارة open-code-review-delegate وقواعد JSON التي استخرجتها أداة OCR.
-4. استخدم المهارات المناسبة، ومنها:
-   - architecture-patterns لفهم الهيكل.
-   - frontend-design لتقييم الواجهة.
-   - emil-design-eng لمراجعة الحركات والتفاعلات.
-   - security-and-hardening للأمان.
-   - performance-optimization للأداء.
-5. نفّذ تدقيقاً شاملاً للكود وتدفق المستخدم وواجهة الاستخدام.
-6. لا تكتب كوداً الآن. أخرج تقريراً عربياً مرتباً من الأخطر إلى الأقل،
-   يذكر الملف والسطر، وطريقة إعادة إنتاج المشكلة، وتأثيرها، والإصلاح المقترح.
-```
-
-## 8. تقسيم العمل إلى وكلاء فرعيين
-
-للاستخدام من الهاتف، يمكن تفويض الفحص إلى وكلاء فرعيين ثم طلب تقرير موحد:
-
-```text
-شغّل ثلاثة وكلاء فرعيين داخلياً بالتوازي:
-1. وكيل يراجع الأمان باستخدام security-and-hardening.
-2. وكيل يراجع UI/UX والحركات باستخدام frontend-design وemil-design-eng.
-3. وكيل يراجع الأداء والمعمارية باستخدام performance-optimization وarchitecture-patterns.
-
-لا تسمح لأي وكيل بتعديل الملفات. اجمع النتائج في تقرير عربي واحد،
-واحذف التكرار، ورتّب المخاطر حسب الشدة، واذكر مسار الملف ورقم السطر.
-```
-
-لا تستخدم هذا الأسلوب إذا كان الوكلاء يعملون على نفس الملفات مع صلاحية الكتابة في الوقت نفسه. اجعل مرحلة الفحص قراءة فقط، ثم اجمع النتائج، وبعد موافقة المستخدم نفّذ التعديلات في مرحلة منفصلة.
-
-## 9. دورة عمل موصى بها
-
-1. **التهيئة:** استنسخ الكتالوج وثبّت التكاملات المطلوبة فقط.
-2. **اختيار المهارات:** حدد مهارة أو مهارتين مناسبتين، ولا تطلب من الوكيل قراءة الكتالوج كله بلا حاجة.
-3. **التدقيق:** اقرأ `MASTER_AGENT_INSTRUCTIONS.md` وشغّل الفحص في وضع قراءة فقط.
-4. **التقرير:** اطلب الأدلة: الملف، السطر، الأثر، خطوات التجربة، ودرجة الخطورة.
-5. **الموافقة:** راجع التقرير من الهاتف وحدد ما يسمح بتنفيذه.
-6. **التنفيذ:** اسمح بتعديل نطاق محدد فقط، مع طلب اختبارات تحقق.
-7. **التحقق:** استخدم `verification-before-completion` وشغّل الاختبارات المناسبة.
-8. **المراجعة:** اطلب `requesting-code-review` أو `code-review-and-quality` قبل الدمج.
-9. **التوثيق:** سجّل المهارات المستخدمة وأي قواعد أو إعدادات خاصة بالمشروع.
-
-## 10. الأمان والخصوصية
-
-لا تضع API Keys أو رموز OAuth أو ملفات `.env` داخل هذا المستودع. استخدم أسرار البيئة أو مدير الأسرار الخاص بالمنصة.
-
-افحص المهارة قبل تشغيل أي سكربت أو أمر shell، خصوصاً المهارات التي تحتوي على `scripts/`. لا تمنح الوكيل صلاحية الكتابة قبل انتهاء مرحلة التدقيق والحصول على موافقة واضحة.
-
-احفظ ملفات OpenCodeReview المؤقتة خارج المستودع، أو أضفها إلى `.gitignore` إذا كانت تحتاج إلى البقاء مؤقتاً:
-
-```gitignore
-.ocr-tmp/
-ocr-*.json
-```
-
-تأكد من مصدر المهارة قبل إضافتها. قائمة المصادر الرسمية المستخدمة في هذا الكتالوج موجودة في `SKILL_SOURCES.md`.
-
-## 11. استكشاف الأخطاء
-
-**لا يجد الوكيل المهارة:** تحقق من وجود `SKILL.md`، ثم اذكر المسار الكامل في الطلب. لا تكتفِ باسم المهارة.
-
-**المهارة تعمل لكن مراجعها مفقودة:** انسخ مجلد المهارة كاملاً بدلاً من نسخ `SKILL.md` فقط.
-
-**لا تظهر أدوات Figma:** تحقق من اتصال MCP والمصادقة، ثم أعد تشغيل الأداة أو الجلسة. اختبر أولاً مهارة بسيطة مثل `figma-use`.
-
-**يفشل OpenCodeReview:** تحقق من وجود Node.js، ثم اقرأ `open-code-review-delegate/SKILL.md` حرفياً. احتفظ بمخرجات الخطأ ولا تكرر أوامر تغيّر المشروع قبل فهم السبب.
-
-**يعدل الوكيل الملفات دون إذن:** أوقف المهمة، أعد التأكيد على تعليمات `MASTER_AGENT_INSTRUCTIONS.md`، واستخدم صيغة واضحة: «تحليل فقط، لا تعديل، لا Commit».
-
-**تضخم سياق المحادثة:** اطلب من الوكلاء الفرعيين تقارير قصيرة منظمة، ثم اطلب من الوكيل الرئيسي دمجها في تقرير واحد مرتب.
-
-## 12. مصادر رسمية مختارة
-
-- [Figma MCP Server Guide](https://github.com/figma/mcp-server-guide)
-- [Anthropic Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins)
-- [Adobe Skills](https://github.com/adobe/skills)
-- [kayan-skill](https://github.com/KAYANSTOR/kayan-skill)
-
-هذا الملف يشرح طريقة الدمج والتشغيل، بينما تبقى التعليمات التفصيلية والقيود الخاصة بكل مهارة داخل ملف `SKILL.md` الخاص بها.
+إذا لم يجد الوكيل المهارة، تحقق من المسار الكامل ووجود `SKILL.md` ثم اطلب قراءته صراحة. إذا فقدت المراجع، أعد تثبيت مجلد المهارة كاملاً عبر `install-skills`. إذا فشل CI، شغّل `validate-skills --json` واقرأ أول خطأ؛ لا تتجاوز الفحص بإخفاء الرابط أو حذف المرجع دون فهمه.

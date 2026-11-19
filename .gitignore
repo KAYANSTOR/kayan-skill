@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ocr-tmp/
+ocr-*.json
+.env
+.env.*
+!.env.example
+.DS_Store

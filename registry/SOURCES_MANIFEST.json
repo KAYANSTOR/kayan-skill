@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-19",
+  "policy": "Upstream content is not automatically replaced. Review commit/tag and license before updating a copied skill.",
+  "sources": [
+    {
+      "repository": "https://github.com/obra/superpowers",
+      "categories": [
+        "01-Core-Workflows"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "license": "see upstream LICENSE",
+      "notes": "Review upstream provenance per skill before redistribution."
+    },
+    {
+      "repository": "https://github.com/DietrichGebert/ponytail",
+      "categories": [
+        "01-Core-Workflows"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/alibaba/open-code-review",
+      "categories": [
+        "01-Core-Workflows"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "55b4b311d6b7dacf9798fa63a4780386db1e5bf3",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/mattpocock/skills",
+      "categories": [
+        "02-Architecture-Quality"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/addyosmani/agent-skills",
+      "categories": [
+        "02-Architecture-Quality"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/wshobson/agents",
+      "categories": [
+        "02-Architecture-Quality",
+        "08-Security-Auditing"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "42203085cfc5736204bf0f6d436dff7e1da0bf3f",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "2de1134dc4d1cfe112934611ae5803ae17a1bd7e",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/pbakaus/impeccable",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "b49177d32788f2dc585c42831d845dacf1ebed2c",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/anthropics/skills",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "license": "not found in shallow clone; review upstream"
+    },
+    {
+      "repository": "https://github.com/emilkowalski/skills",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "categories": [
+        "04-Web-Frameworks"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "license": "not found in shallow clone; review upstream"
+    },
+    {
+      "repository": "https://github.com/tashfeenahmed/freellmapi",
+      "categories": [
+        "05-AI-Infrastructure"
+      ],
+      "status": "documentation-copied",
+      "commit_or_tag": "9d2b4b407b12e489ecd35320cd630d5ff97cd666",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/diegosouzapw/OmniRoute",
+      "categories": [
+        "05-AI-Infrastructure"
+      ],
+      "status": "documentation-and-skills-copied",
+      "commit_or_tag": "cc59ad70b2e9a343f26860e0e040281cb433a37a",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/mohamedjaha/ai-router",
+      "categories": [
+        "05-AI-Infrastructure"
+      ],
+      "status": "documentation-copied",
+      "commit_or_tag": "6913fd213559663ef1d5a8b94902b3d8e58be1b7",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/Graphify-Labs/graphify",
+      "categories": [
+        "06-Code-Analysis"
+      ],
+      "status": "documentation-copied",
+      "commit_or_tag": "340268a70a83588d6b3c6de1fffb05326350ef1d",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/AgriciDaniel/claude-seo",
+      "categories": [
+        "07-SEO-Marketing"
+      ],
+      "status": "skills-and-documentation-copied",
+      "commit_or_tag": "468ed5b0d9e3249394783710e54abb02837e326b",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/cloudflare/security-audit-skill",
+      "categories": [
+        "08-Security-Auditing"
+      ],
+      "status": "skill-copied",
+      "commit_or_tag": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/trailofbits/skills",
+      "categories": [
+        "08-Security-Auditing"
+      ],
+      "status": "skills-copied-selected",
+      "commit_or_tag": "149d7b21f4067765b82e67029730b42d228ef4b4",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/figma/mcp-server-guide",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "documentation-source",
+      "commit_or_tag": "43a06ff1738935ad5c3d9b0437b5373aaf45cdc3",
+      "license": "not found in shallow clone; review upstream"
+    },
+    {
+      "repository": "https://github.com/adobe/skills",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "documentation-source",
+      "commit_or_tag": "20d1b67d5fe0a663e4daa755660bd7bbf960f15f",
+      "license": "see upstream LICENSE"
+    },
+    {
+      "repository": "https://github.com/Ashutoshx7/VengeanceUI",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "documented-library",
+      "commit_or_tag": "6beca5f9317aa8842640d267abe95f6e2ecc5343",
+      "license": "see upstream LICENSE",
+      "provenance_note": "No local Git clone was available for this web/documentation source."
+    },
+    {
+      "repository": "https://skiper-ui.com/",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "documented-library",
+      "commit_or_tag": null,
+      "license": "see official source terms",
+      "provenance_note": "No local Git clone was available for this web/documentation source."
+    },
+    {
+      "repository": "https://animaster.dev/",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "documented-library",
+      "commit_or_tag": null,
+      "license": "see official source terms",
+      "provenance_note": "No local Git clone was available for this web/documentation source."
+    },
+    {
+      "repository": "user-provided specification",
+      "categories": [
+        "03-UI-UX-Design"
+      ],
+      "status": "custom-authored",
+      "commit_or_tag": null,
+      "license": "project-local",
+      "provenance_note": "Authored from user-provided specification."
+    }
+  ]
+}

@@ -1,3 +1,8 @@
+---
+name: impeccable-harden
+description: Impeccable harden UI quality skill. Use when auditing or improving web interface implementation with the harden workflow.
+---
+
 Designs that only work with perfect data aren't production-ready. Harden the interface against the inputs, errors, languages, and network conditions that real users will throw at it.
 
 ## Assess Hardening Needs

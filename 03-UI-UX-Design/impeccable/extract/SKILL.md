@@ -1,3 +1,8 @@
+---
+name: impeccable-extract
+description: Impeccable extract UI quality skill. Use when auditing or improving web interface implementation with the extract workflow.
+---
+
 # Extract Flow
 
 Identify reusable patterns, components, and design tokens, then extract and consolidate them into the design system for systematic reuse.

@@ -2,6 +2,8 @@
 
 Selected skill directories are copied from these public repositories:
 
+The machine-readable provenance record is maintained in [`registry/SOURCES_MANIFEST.json`](./registry/SOURCES_MANIFEST.json). This file remains a human-readable summary; it does not replace per-source license review.
+
 - `obra/superpowers`
 - `DietrichGebert/ponytail`
 - `alibaba/open-code-review`
