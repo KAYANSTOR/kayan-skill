@@ -7,4 +7,6 @@
 - [`03-UI-UX-Design/`](./03-UI-UX-Design/): مهارات تصميم واجهات المستخدم وتجربة المستخدم.
 - [`04-Web-Frameworks/`](./04-Web-Frameworks/): أطر وأدوات تطوير الويب مثل React وNext.js.
 
+- [`DOCUMENTATION.md`](./DOCUMENTATION.md): دليل تفصيلي لدمج المهارات مع Claude Code وCursor وCodex وGemini CLI والوكلاء السحابيين، مع إرشادات Figma وAdobe وOpenCodeReview.
+
 للاطلاع على قواعد العمل العامة للوكيل، راجع [`MASTER_AGENT_INSTRUCTIONS.md`](./MASTER_AGENT_INSTRUCTIONS.md).
