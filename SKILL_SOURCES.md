@@ -16,6 +16,14 @@ Selected skill directories are copied from these public repositories:
 - `vercel-labs/agent-skills`
 - `figma/mcp-server-guide`
 - `adobe/skills`
+- `AgriciDaniel/claude-seo`
+- `tashfeenahmed/freellmapi`
+- `diegosouzapw/OmniRoute`
+- `mohamedjaha/ai-router`
+- `Graphify-Labs/graphify`
+- `Ashutoshx7/VengeanceUI` (documented UI library)
+- `skiper-ui.com` (documented UI library)
+- `animaster.dev` (documented UI library)
 - User-provided specification: `03-UI-UX-Design/ui/mobile-first-card-ui-architecture`
 
 `request-refactor-plan` was intentionally omitted because it is no longer present in `mattpocock/skills`.
