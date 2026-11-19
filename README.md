@@ -9,6 +9,7 @@
 - [`05-AI-Infrastructure/`](./05-AI-Infrastructure/): بوابات وموجهات الذكاء الاصطناعي مثل FreeLLMAPI وOmniRoute وAI Router.
 - [`06-Code-Analysis/`](./06-Code-Analysis/): أدوات تحليل قواعد الكود وبناء الرسوم البيانية المعرفية مثل Graphify.
 - [`07-SEO-Marketing/`](./07-SEO-Marketing/): مهارات تدقيق SEO وGEO والمحتوى والتقنيات التسويقية، بما فيها `claude-seo`.
+- [`08-Security-Auditing/`](./08-Security-Auditing/): مهارات التدقيق الأمني، تحليل الثغرات، SAST، تصنيف المخاطر، وسلسلة توريد البرمجيات.
 
 - [`DOCUMENTATION.md`](./DOCUMENTATION.md): دليل تفصيلي لدمج المهارات مع Claude Code وCursor وCodex وGemini CLI والوكلاء السحابيين، مع إرشادات Figma وAdobe وOpenCodeReview.
 

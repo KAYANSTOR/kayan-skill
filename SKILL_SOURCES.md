@@ -24,6 +24,9 @@ Selected skill directories are copied from these public repositories:
 - `Ashutoshx7/VengeanceUI` (documented UI library)
 - `skiper-ui.com` (documented UI library)
 - `animaster.dev` (documented UI library)
+- `cloudflare/security-audit-skill`
+- `trailofbits/skills`
+- `wshobson/agents` (security-scanning skills)
 - User-provided specification: `03-UI-UX-Design/ui/mobile-first-card-ui-architecture`
 
 `request-refactor-plan` was intentionally omitted because it is no longer present in `mattpocock/skills`.
