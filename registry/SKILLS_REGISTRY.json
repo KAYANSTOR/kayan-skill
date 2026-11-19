@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "generated_at": "2026-11-19",
   "catalog": "KAYANSTOR/kayan-skill",
-  "skill_count": 172,
+  "skill_count": 173,
   "skills": [
     {
       "id": "01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate",
@@ -4048,6 +4048,32 @@
       "dependencies": [],
       "source": {
         "repository": "Multiple upstream security repositories; see registry/SOURCES_MANIFEST.json",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": null,
+        "copied_verbatim": true,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "catalog-validated",
+        "checked_at": "2026-11-19",
+        "notes": "Metadata, path, and local Markdown links are checked by scripts/validate_catalog.py; upstream provenance requires source-level review."
+      }
+    },
+    {
+      "id": "08-Security-Auditing/security-audit-27",
+      "name": "security-audit-27",
+      "description": "إجراء تدقيق أمني شامل لتطبيق ويب وفق 27 فحصًا في 6 مجموعات: المصادقة والصلاحيات، الأسرار، قاعدة البيانات والمدخلات، الخادم، الاعتماديات، والمراقبة. يُنتج تقريرًا بالنتائج والإصلاحات والاختبارات.",
+      "path": "08-Security-Auditing/security-audit-27/SKILL.md",
+      "category": "08-Security-Auditing",
+      "when_to_use": null,
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "user-provided specification",
         "upstream_path": null,
         "commit_or_tag": null,
         "license": null,

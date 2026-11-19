@@ -224,6 +224,16 @@
       "commit_or_tag": null,
       "license": "project-local",
       "provenance_note": "Authored from user-provided specification."
+    },
+    {
+      "repository": "user-provided specification",
+      "categories": [
+        "08-Security-Auditing"
+      ],
+      "status": "custom-authored",
+      "commit_or_tag": null,
+      "license": "project-local",
+      "provenance_note": "Added from the attached security-audit-27 specification."
     }
   ]
 }

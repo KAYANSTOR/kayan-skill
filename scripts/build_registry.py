@@ -35,6 +35,9 @@ def main() -> int:
             return 1
         rel = path.relative_to(ROOT)
         category = rel.parts[0]
+        source_repository = SOURCE_HINTS.get(category)
+        if rel.as_posix() == "08-Security-Auditing/security-audit-27/SKILL.md":
+            source_repository = "user-provided specification"
         records.append({
             "id": rel.as_posix().removesuffix("/SKILL.md"),
             "name": metadata["name"],
@@ -46,7 +49,7 @@ def main() -> int:
             "supported_platforms": ["generic-agent"],
             "dependencies": [],
             "source": {
-                "repository": SOURCE_HINTS.get(category),
+                "repository": source_repository,
                 "upstream_path": None,
                 "commit_or_tag": None,
                 "license": None,

@@ -29,6 +29,7 @@ The machine-readable provenance record is maintained in [`registry/SOURCES_MANIF
 - `cloudflare/security-audit-skill`
 - `trailofbits/skills`
 - `wshobson/agents` (security-scanning skills)
+- User-provided specification: `08-Security-Auditing/security-audit-27`
 - User-provided specification: `03-UI-UX-Design/ui/mobile-first-card-ui-architecture`
 
 `request-refactor-plan` was intentionally omitted because it is no longer present in `mattpocock/skills`.
