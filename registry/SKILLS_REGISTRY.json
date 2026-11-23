@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19",
+  "generated_at": "2026-11-23",
   "catalog": "KAYANSTOR/kayan-skill",
-  "skill_count": 173,
+  "skill_count": 174,
   "skills": [
     {
       "id": "01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate",
@@ -655,6 +655,32 @@
       }
     },
     {
+      "id": "02-Architecture-Quality/ui-ux-behavior-qa-audit",
+      "name": "ui-ux-behavior-qa-audit",
+      "description": "تدقيق شامل بصري وتفاعلي وعملي لواجهات الويب والتطبيقات، يغطي الطبقات والتداخل والقص وRTL وإمكانية الوصول وحالات المكونات والأحداث والسيناريوهات من البداية للنهاية باستخدام أدوات المتصفح المتاحة.",
+      "path": "02-Architecture-Quality/ui-ux-behavior-qa-audit/SKILL.md",
+      "category": "02-Architecture-Quality",
+      "when_to_use": null,
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "User-authored skill; upstream tools referenced, not copied",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": null,
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "catalog-validated",
+        "checked_at": "2026-11-23",
+        "notes": "Metadata and local Markdown links are checked by scripts/validate_catalog.py; upstream tools are documented as references only."
+      }
+    },
+    {
       "id": "03-UI-UX-Design/animaster-lib",
       "name": "animaster-lib",
       "description": "مكتبة مكونات حركية تحتوي على أكثر من 300 مكوناً لتجارب الويب، بما في ذلك WebGL وGSAP. استخدمها عند طلب إضافة حركات أو مؤثرات تفاعلية أو مشاهد بصرية متقدمة، وراجع المصدر الرسمي على animaster.dev قبل اختيار المكون.",
@@ -1097,10 +1123,10 @@
       }
     },
     {
-      "id": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram",
-      "name": "figma-generate-diagram",
-      "description": "MANDATORY prerequisite — load this skill BEFORE every `generate_diagram` tool call. NEVER call `generate_diagram` directly without loading this skill first. Trigger whenever the user asks to create, generate, draw, render, sketch, or build a diagram — flowchart, architecture diagram, sequence diagram, ERD or entity-relationship diagram, state diagram or state machine, gantt chart, or timeline. Also trigger when the user mentions Mermaid syntax or wants a system architecture, decision tree, dependency graph, API call flow, auth handshake, schema, or pipeline visualized in FigJam. Routes to type-specific guidance, sets universal Mermaid constraints, and tells you when to use a different diagram type or skip the tool entirely (mindmaps, pie charts, class diagrams, etc.).",
-      "path": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/SKILL.md",
+      "id": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/references/figma-use-figjam",
+      "name": "figma-use-figjam",
+      "description": "This skill helps agents use Figma's use_figma MCP tool in the FigJam context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
+      "path": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/references/figma-use-figjam/SKILL.md",
       "category": "03-UI-UX-Design",
       "when_to_use": null,
       "required_tools": [],
@@ -1123,10 +1149,10 @@
       }
     },
     {
-      "id": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/references/figma-use-figjam",
-      "name": "figma-use-figjam",
-      "description": "This skill helps agents use Figma's use_figma MCP tool in the FigJam context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
-      "path": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/references/figma-use-figjam/SKILL.md",
+      "id": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram",
+      "name": "figma-generate-diagram",
+      "description": "MANDATORY prerequisite — load this skill BEFORE every `generate_diagram` tool call. NEVER call `generate_diagram` directly without loading this skill first. Trigger whenever the user asks to create, generate, draw, render, sketch, or build a diagram — flowchart, architecture diagram, sequence diagram, ERD or entity-relationship diagram, state diagram or state machine, gantt chart, or timeline. Also trigger when the user mentions Mermaid syntax or wants a system architecture, decision tree, dependency graph, API call flow, auth handshake, schema, or pipeline visualized in FigJam. Routes to type-specific guidance, sets universal Mermaid constraints, and tells you when to use a different diagram type or skip the tool entirely (mindmaps, pie charts, class diagrams, etc.).",
+      "path": "03-UI-UX-Design/figma-adobe-tools/12-figma-generate-diagram/SKILL.md",
       "category": "03-UI-UX-Design",
       "when_to_use": null,
       "required_tools": [],
