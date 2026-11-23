@@ -3,7 +3,7 @@
 فهرس مبسط لمهارات الوكيل ومجالات استخدامها:
 
 - [`01-Core-Workflows/`](./01-Core-Workflows/): سير العمل الأساسي والمهام العامة التي يعتمد عليها الوكيل.
-- [`02-Architecture-Quality/`](./02-Architecture-Quality/): الهندسة المعمارية، جودة الكود، الاختبارات، والأمان والأداء.
+- [`02-Architecture-Quality/`](./02-Architecture-Quality/): الهندسة المعمارية، جودة الكود، الاختبارات، والأمان والأداء، بما فيها [`ui-ux-behavior-qa-audit`](./02-Architecture-Quality/ui-ux-behavior-qa-audit/SKILL.md) للتدقيق البصري والسلوكي الشامل.
 - [`03-UI-UX-Design/`](./03-UI-UX-Design/): مهارات تصميم واجهات المستخدم وتجربة المستخدم، بما فيها [`mobile-first-card-ui-architecture`](./03-UI-UX-Design/ui/mobile-first-card-ui-architecture/).
 - [`04-Web-Frameworks/`](./04-Web-Frameworks/): أطر وأدوات تطوير الويب مثل React وNext.js.
 - [`05-AI-Infrastructure/`](./05-AI-Infrastructure/): بوابات وموجهات الذكاء الاصطناعي مثل FreeLLMAPI وOmniRoute وAI Router.
