@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-19",
+  "updated_at": "2026-11-23",
   "policy": "Upstream content is not automatically replaced. Review commit/tag and license before updating a copied skill.",
   "sources": [
     {
@@ -234,6 +234,36 @@
       "commit_or_tag": null,
       "license": "project-local",
       "provenance_note": "Added from the attached security-audit-27 specification."
+    },
+    {
+      "repository": "https://github.com/microsoft/playwright",
+      "categories": [
+        "02-Architecture-Quality"
+      ],
+      "status": "reference-only",
+      "commit_or_tag": null,
+      "license": "Review upstream license before copying or redistributing",
+      "notes": "Documented as an optional tool/reference in ui-ux-behavior-qa-audit; no upstream code or skill content copied."
+    },
+    {
+      "repository": "https://github.com/microsoft/playwright-mcp",
+      "categories": [
+        "02-Architecture-Quality"
+      ],
+      "status": "reference-only",
+      "commit_or_tag": null,
+      "license": "Review upstream license before copying or redistributing",
+      "notes": "Documented as an optional tool/reference in ui-ux-behavior-qa-audit; no upstream code or skill content copied."
+    },
+    {
+      "repository": "https://github.com/browser-use/browser-use",
+      "categories": [
+        "02-Architecture-Quality"
+      ],
+      "status": "reference-only",
+      "commit_or_tag": null,
+      "license": "Review upstream license before copying or redistributing",
+      "notes": "Documented as an optional tool/reference in ui-ux-behavior-qa-audit; no upstream code or skill content copied."
     }
   ]
 }
