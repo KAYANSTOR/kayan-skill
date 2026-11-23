@@ -31,3 +31,33 @@ jobs:
         run: |
           python -m compileall -q scripts tests
           git diff --check
+
+      - name: Build complete skill catalog snapshot
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          python - <<'PY'
+          import zipfile
+          from pathlib import Path
+          root = Path(".")
+          output = Path("kayan-skill-snapshot.zip")
+          excluded = {".git", ".github/workflows"}
+          with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED) as archive:
+              for path in sorted(root.rglob("*")):
+                  if not path.is_file() or output == path:
+                      continue
+                  relative = path.relative_to(root)
+                  if any(part in excluded for part in relative.parts):
+                      continue
+                  if "__pycache__" in relative.parts or path.suffix == ".pyc":
+                      continue
+                  archive.write(path, relative.as_posix())
+          PY
+
+      - name: Upload complete skill catalog snapshot
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: kayan-skill-snapshot-${{ github.sha }}
+          path: kayan-skill-snapshot.zip
+          if-no-files-found: error
+          retention-days: 90
