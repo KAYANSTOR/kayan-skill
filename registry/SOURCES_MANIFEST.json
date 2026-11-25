@@ -292,6 +292,16 @@
       "status": "copied-selected",
       "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
       "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "https://github.com/wshobson/agents",
+      "categories": [
+        "10-Backend-Engineering",
+        "18-Kayan-Project-Skills"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
+      "license": "MIT"
     }
   ]
 }
