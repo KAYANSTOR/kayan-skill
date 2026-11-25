@@ -302,6 +302,15 @@
       "status": "copied-selected",
       "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
       "license": "MIT"
+    },
+    {
+      "repository": "https://github.com/supabase/agent-skills",
+      "categories": [
+        "11-Database-Engineering"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "license": "MIT"
     }
   ]
 }
