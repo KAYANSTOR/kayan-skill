@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "generated_at": "2026-11-26",
   "catalog": "KAYANSTOR/kayan-skill",
-  "skill_count": 292,
+  "skill_count": 294,
   "skills": [
     {
       "id": "01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate",
@@ -7516,6 +7516,50 @@
       "source": {
         "repository": "https://github.com/wshobson/agents",
         "upstream_path": "plugins/developer-essentials/skills/auth-implementation-patterns/SKILL.md",
+        "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
+        "license": "MIT",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "15-Testing-QA/upstream/wshobson/e2e-testing-patterns",
+      "name": "e2e-testing-patterns",
+      "description": "Upstream engineering skill: e2e-testing-patterns",
+      "path": "15-Testing-QA/upstream/wshobson/e2e-testing-patterns/SKILL.md",
+      "category": "15-Testing-QA",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/wshobson/agents",
+        "upstream_path": "plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+        "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
+        "license": "MIT",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/upstream/wshobson/prompt-engineering-patterns",
+      "name": "prompt-engineering-patterns",
+      "description": "Upstream engineering skill: prompt-engineering-patterns",
+      "path": "16-AI-Application-Engineering/upstream/wshobson/prompt-engineering-patterns/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/wshobson/agents",
+        "upstream_path": "plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md",
         "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
         "license": "MIT",
         "copied_verbatim": true
