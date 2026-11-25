@@ -283,6 +283,15 @@
       "commit_or_tag": null,
       "license": "LicenseRef-Kayan-Owner-Terms",
       "notes": "Original guidance; root LICENSE owner terms apply. External references are reading pointers, not copied source. Technical review pending."
+    },
+    {
+      "repository": "https://github.com/flutter/agent-plugins",
+      "categories": [
+        "09-Mobile-Development"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+      "license": "BSD-3-Clause"
     }
   ]
 }

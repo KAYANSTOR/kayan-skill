@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "generated_at": "2026-11-26",
   "catalog": "KAYANSTOR/kayan-skill",
-  "skill_count": 274,
+  "skill_count": 280,
   "skills": [
     {
       "id": "01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate",
@@ -7126,6 +7126,138 @@
         "status": "authored-review-pending",
         "checked_at": null,
         "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/flutter-apply-architecture-best-practices",
+      "name": "flutter-apply-architecture-best-practices",
+      "description": "Official Flutter skill: flutter-apply-architecture-best-practices",
+      "path": "09-Mobile-Development/upstream/flutter/flutter-apply-architecture-best-practices/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/flutter-apply-architecture-best-practices/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/flutter-setup-declarative-routing",
+      "name": "flutter-setup-declarative-routing",
+      "description": "Official Flutter skill: flutter-setup-declarative-routing",
+      "path": "09-Mobile-Development/upstream/flutter/flutter-setup-declarative-routing/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/flutter-setup-declarative-routing/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/flutter-setup-localization",
+      "name": "flutter-setup-localization",
+      "description": "Official Flutter skill: flutter-setup-localization",
+      "path": "09-Mobile-Development/upstream/flutter/flutter-setup-localization/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/flutter-setup-localization/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/flutter-add-widget-test",
+      "name": "flutter-add-widget-test",
+      "description": "Official Flutter skill: flutter-add-widget-test",
+      "path": "09-Mobile-Development/upstream/flutter/flutter-add-widget-test/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/flutter-add-widget-test/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/flutter-add-integration-test",
+      "name": "flutter-add-integration-test",
+      "description": "Official Flutter skill: flutter-add-integration-test",
+      "path": "09-Mobile-Development/upstream/flutter/flutter-add-integration-test/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/flutter-add-integration-test/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
+      }
+    },
+    {
+      "id": "09-Mobile-Development/upstream/flutter/dart-run-static-analysis",
+      "name": "dart-run-static-analysis",
+      "description": "Official Flutter skill: dart-run-static-analysis",
+      "path": "09-Mobile-Development/upstream/flutter/dart-run-static-analysis/SKILL.md",
+      "category": "09-Mobile-Development",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/flutter/agent-plugins",
+        "upstream_path": "skills/dart-run-static-analysis/SKILL.md",
+        "commit_or_tag": "ff6d472ee66dbed566c4500edee460c94fde0a02",
+        "license": "BSD-3-Clause",
+        "copied_verbatim": true
+      },
+      "verification": {
+        "status": "upstream-import-review-pending"
       }
     }
   ]
