@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-26",
   "policy": "Upstream content is not automatically replaced. Review commit/tag and license before updating a copied skill.",
   "sources": [
     {
@@ -264,6 +264,25 @@
       "commit_or_tag": null,
       "license": "Review upstream license before copying or redistributing",
       "notes": "Documented as an optional tool/reference in ui-ux-behavior-qa-audit; no upstream code or skill content copied."
+    },
+    {
+      "repository": "https://github.com/KAYANSTOR/kayan-skill",
+      "categories": [
+        "09-Mobile-Development",
+        "10-Backend-Engineering",
+        "11-Database-Engineering",
+        "12-DevOps-Cloud",
+        "13-SaaS-Architecture",
+        "14-API-Integrations",
+        "15-Testing-QA",
+        "16-AI-Application-Engineering",
+        "17-Financial-Engineering",
+        "18-Kayan-Project-Skills"
+      ],
+      "status": "original-authored",
+      "commit_or_tag": null,
+      "license": "LicenseRef-Kayan-Owner-Terms",
+      "notes": "Original guidance; root LICENSE owner terms apply. External references are reading pointers, not copied source. Technical review pending."
     }
   ]
 }

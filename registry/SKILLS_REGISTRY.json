@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-23",
+  "generated_at": "2026-11-26",
   "catalog": "KAYANSTOR/kayan-skill",
-  "skill_count": 174,
+  "skill_count": 274,
   "skills": [
     {
       "id": "01-Core-Workflows/alibaba-open-code-review/open-code-review-delegate",
@@ -4526,6 +4526,2606 @@
         "status": "catalog-validated",
         "checked_at": "2026-11-19",
         "notes": "Metadata, path, and local Markdown links are checked by scripts/validate_catalog.py; upstream provenance requires source-level review."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-development",
+      "name": "flutter-development",
+      "description": "Use when compose widgets around explicit state and lifecycle.",
+      "path": "09-Mobile-Development/flutter-development/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Compose widgets around explicit state and lifecycle",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/dart-best-practices",
+      "name": "dart-best-practices",
+      "description": "Use when use sound null safety and typed async boundaries.",
+      "path": "09-Mobile-Development/dart-best-practices/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Use sound null safety and typed async boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-clean-architecture",
+      "name": "flutter-clean-architecture",
+      "description": "Use when separate presentation domain and data.",
+      "path": "09-Mobile-Development/flutter-clean-architecture/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Separate presentation domain and data",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-riverpod",
+      "name": "flutter-riverpod",
+      "description": "Use when model asynchronous state with scoped providers.",
+      "path": "09-Mobile-Development/flutter-riverpod/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Model asynchronous state with scoped providers",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-bloc",
+      "name": "flutter-bloc",
+      "description": "Use when model events and immutable states.",
+      "path": "09-Mobile-Development/flutter-bloc/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Model events and immutable states",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-navigation",
+      "name": "flutter-navigation",
+      "description": "Use when design typed routes and deep links.",
+      "path": "09-Mobile-Development/flutter-navigation/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Design typed routes and deep links",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-performance",
+      "name": "flutter-performance",
+      "description": "Use when profile actual device bottlenecks.",
+      "path": "09-Mobile-Development/flutter-performance/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Profile actual device bottlenecks",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-testing",
+      "name": "flutter-testing",
+      "description": "Use when choose unit widget and integration test boundaries.",
+      "path": "09-Mobile-Development/flutter-testing/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Choose unit widget and integration test boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-platform-integration",
+      "name": "flutter-platform-integration",
+      "description": "Use when integrate native capabilities via typed channels.",
+      "path": "09-Mobile-Development/flutter-platform-integration/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Integrate native capabilities via typed channels",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "09-Mobile-Development/flutter-release-engineering",
+      "name": "flutter-release-engineering",
+      "description": "Use when build reproducible signed releases.",
+      "path": "09-Mobile-Development/flutter-release-engineering/SKILL.md",
+      "category": "09-Mobile-Development",
+      "when_to_use": "Build reproducible signed releases",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/nodejs-backend",
+      "name": "nodejs-backend",
+      "description": "Use when build bounded asynchronous services.",
+      "path": "10-Backend-Engineering/nodejs-backend/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Build bounded asynchronous services",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/nestjs-architecture",
+      "name": "nestjs-architecture",
+      "description": "Use when organize modules by business capability.",
+      "path": "10-Backend-Engineering/nestjs-architecture/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Organize modules by business capability",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/python-engineering",
+      "name": "python-engineering",
+      "description": "Use when build typed maintainable Python packages.",
+      "path": "10-Backend-Engineering/python-engineering/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Build typed maintainable Python packages",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/fastapi-development",
+      "name": "fastapi-development",
+      "description": "Use when design typed HTTP endpoints.",
+      "path": "10-Backend-Engineering/fastapi-development/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Design typed HTTP endpoints",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/rest-api-engineering",
+      "name": "rest-api-engineering",
+      "description": "Use when define resource oriented HTTP contracts.",
+      "path": "10-Backend-Engineering/rest-api-engineering/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Define resource oriented HTTP contracts",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/graphql-engineering",
+      "name": "graphql-engineering",
+      "description": "Use when design bounded GraphQL schemas.",
+      "path": "10-Backend-Engineering/graphql-engineering/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Design bounded GraphQL schemas",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/websocket-engineering",
+      "name": "websocket-engineering",
+      "description": "Use when manage persistent authenticated connections.",
+      "path": "10-Backend-Engineering/websocket-engineering/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Manage persistent authenticated connections",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/background-jobs",
+      "name": "background-jobs",
+      "description": "Use when execute durable asynchronous work.",
+      "path": "10-Backend-Engineering/background-jobs/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Execute durable asynchronous work",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/event-driven-architecture",
+      "name": "event-driven-architecture",
+      "description": "Use when publish durable domain events.",
+      "path": "10-Backend-Engineering/event-driven-architecture/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Publish durable domain events",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "10-Backend-Engineering/backend-performance",
+      "name": "backend-performance",
+      "description": "Use when measure service latency and throughput.",
+      "path": "10-Backend-Engineering/backend-performance/SKILL.md",
+      "category": "10-Backend-Engineering",
+      "when_to_use": "Measure service latency and throughput",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/postgresql-engineering",
+      "name": "postgresql-engineering",
+      "description": "Use when design relational persistence with integrity.",
+      "path": "11-Database-Engineering/postgresql-engineering/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Design relational persistence with integrity",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/postgresql-performance",
+      "name": "postgresql-performance",
+      "description": "Use when diagnose expensive queries.",
+      "path": "11-Database-Engineering/postgresql-performance/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Diagnose expensive queries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/database-schema-design",
+      "name": "database-schema-design",
+      "description": "Use when model entities and invariants.",
+      "path": "11-Database-Engineering/database-schema-design/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Model entities and invariants",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/database-migrations",
+      "name": "database-migrations",
+      "description": "Use when evolve schemas without downtime.",
+      "path": "11-Database-Engineering/database-migrations/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Evolve schemas without downtime",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/supabase-engineering",
+      "name": "supabase-engineering",
+      "description": "Use when use Supabase auth database and storage boundaries.",
+      "path": "11-Database-Engineering/supabase-engineering/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Use Supabase auth database and storage boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/supabase-rls",
+      "name": "supabase-rls",
+      "description": "Use when enforce row isolation in database.",
+      "path": "11-Database-Engineering/supabase-rls/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Enforce row isolation in database",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/redis-engineering",
+      "name": "redis-engineering",
+      "description": "Use when use Redis for bounded ephemeral state.",
+      "path": "11-Database-Engineering/redis-engineering/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Use Redis for bounded ephemeral state",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/database-transactions",
+      "name": "database-transactions",
+      "description": "Use when protect atomic business invariants.",
+      "path": "11-Database-Engineering/database-transactions/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Protect atomic business invariants",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/database-backup-recovery",
+      "name": "database-backup-recovery",
+      "description": "Use when plan recoverable database backups.",
+      "path": "11-Database-Engineering/database-backup-recovery/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Plan recoverable database backups",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "11-Database-Engineering/pgvector-engineering",
+      "name": "pgvector-engineering",
+      "description": "Use when store and search embeddings.",
+      "path": "11-Database-Engineering/pgvector-engineering/SKILL.md",
+      "category": "11-Database-Engineering",
+      "when_to_use": "Store and search embeddings",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/railway-deployment",
+      "name": "railway-deployment",
+      "description": "Use when deploy services with explicit environment configuration.",
+      "path": "12-DevOps-Cloud/railway-deployment/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Deploy services with explicit environment configuration",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/vercel-deployment",
+      "name": "vercel-deployment",
+      "description": "Use when deploy web applications with environment separation.",
+      "path": "12-DevOps-Cloud/vercel-deployment/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Deploy web applications with environment separation",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/docker-engineering",
+      "name": "docker-engineering",
+      "description": "Use when build minimal reproducible containers.",
+      "path": "12-DevOps-Cloud/docker-engineering/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Build minimal reproducible containers",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/github-actions-cicd",
+      "name": "github-actions-cicd",
+      "description": "Use when build least privilege CI workflows.",
+      "path": "12-DevOps-Cloud/github-actions-cicd/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Build least privilege CI workflows",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/linux-administration",
+      "name": "linux-administration",
+      "description": "Use when operate Linux hosts safely.",
+      "path": "12-DevOps-Cloud/linux-administration/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Operate Linux hosts safely",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/nginx-configuration",
+      "name": "nginx-configuration",
+      "description": "Use when configure reverse proxy boundaries.",
+      "path": "12-DevOps-Cloud/nginx-configuration/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Configure reverse proxy boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/opentelemetry",
+      "name": "opentelemetry",
+      "description": "Use when instrument distributed requests.",
+      "path": "12-DevOps-Cloud/opentelemetry/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Instrument distributed requests",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/production-monitoring",
+      "name": "production-monitoring",
+      "description": "Use when monitor service health with actionable alerts.",
+      "path": "12-DevOps-Cloud/production-monitoring/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Monitor service health with actionable alerts",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/secrets-management",
+      "name": "secrets-management",
+      "description": "Use when protect credentials throughout lifecycle.",
+      "path": "12-DevOps-Cloud/secrets-management/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Protect credentials throughout lifecycle",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "12-DevOps-Cloud/disaster-recovery",
+      "name": "disaster-recovery",
+      "description": "Use when plan restoration of critical services.",
+      "path": "12-DevOps-Cloud/disaster-recovery/SKILL.md",
+      "category": "12-DevOps-Cloud",
+      "when_to_use": "Plan restoration of critical services",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/multi-tenant-architecture",
+      "name": "multi-tenant-architecture",
+      "description": "Use when design tenant aware SaaS boundaries.",
+      "path": "13-SaaS-Architecture/multi-tenant-architecture/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Design tenant aware SaaS boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/tenant-isolation",
+      "name": "tenant-isolation",
+      "description": "Use when enforce isolation across storage and compute.",
+      "path": "13-SaaS-Architecture/tenant-isolation/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Enforce isolation across storage and compute",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/authentication-engineering",
+      "name": "authentication-engineering",
+      "description": "Use when implement secure identity and sessions.",
+      "path": "13-SaaS-Architecture/authentication-engineering/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Implement secure identity and sessions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/rbac-abac",
+      "name": "rbac-abac",
+      "description": "Use when enforce authorization with explicit policies.",
+      "path": "13-SaaS-Architecture/rbac-abac/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Enforce authorization with explicit policies",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/centralized-sso",
+      "name": "centralized-sso",
+      "description": "Use when federate identity across applications.",
+      "path": "13-SaaS-Architecture/centralized-sso/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Federate identity across applications",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/saas-billing",
+      "name": "saas-billing",
+      "description": "Use when model billable usage and invoices.",
+      "path": "13-SaaS-Architecture/saas-billing/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Model billable usage and invoices",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/subscription-management",
+      "name": "subscription-management",
+      "description": "Use when manage subscription lifecycle.",
+      "path": "13-SaaS-Architecture/subscription-management/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Manage subscription lifecycle",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/feature-flags",
+      "name": "feature-flags",
+      "description": "Use when control rollout safely.",
+      "path": "13-SaaS-Architecture/feature-flags/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Control rollout safely",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/audit-logging",
+      "name": "audit-logging",
+      "description": "Use when record security relevant actions.",
+      "path": "13-SaaS-Architecture/audit-logging/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Record security relevant actions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "13-SaaS-Architecture/saas-scalability",
+      "name": "saas-scalability",
+      "description": "Use when scale shared infrastructure fairly.",
+      "path": "13-SaaS-Architecture/saas-scalability/SKILL.md",
+      "category": "13-SaaS-Architecture",
+      "when_to_use": "Scale shared infrastructure fairly",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/mikrotik-routeros-api",
+      "name": "mikrotik-routeros-api",
+      "description": "Use when integrate authorized RouterOS management.",
+      "path": "14-API-Integrations/mikrotik-routeros-api/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate authorized RouterOS management",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/whatsapp-cloud-api",
+      "name": "whatsapp-cloud-api",
+      "description": "Use when integrate official WhatsApp messaging.",
+      "path": "14-API-Integrations/whatsapp-cloud-api/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate official WhatsApp messaging",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/whatsapp-qr-gateway",
+      "name": "whatsapp-qr-gateway",
+      "description": "Use when manage authorized linked device sessions.",
+      "path": "14-API-Integrations/whatsapp-qr-gateway/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Manage authorized linked device sessions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/meta-graph-api",
+      "name": "meta-graph-api",
+      "description": "Use when integrate Meta APIs with scoped permissions.",
+      "path": "14-API-Integrations/meta-graph-api/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate Meta APIs with scoped permissions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/telegram-bot-api",
+      "name": "telegram-bot-api",
+      "description": "Use when integrate Telegram bot updates.",
+      "path": "14-API-Integrations/telegram-bot-api/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate Telegram bot updates",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/webhook-engineering",
+      "name": "webhook-engineering",
+      "description": "Use when receive authenticated durable callbacks.",
+      "path": "14-API-Integrations/webhook-engineering/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Receive authenticated durable callbacks",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/payment-gateway-integration",
+      "name": "payment-gateway-integration",
+      "description": "Use when integrate authorized payment providers.",
+      "path": "14-API-Integrations/payment-gateway-integration/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate authorized payment providers",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/yemeni-wallet-integration",
+      "name": "yemeni-wallet-integration",
+      "description": "Use when integrate documented Yemeni wallet APIs.",
+      "path": "14-API-Integrations/yemeni-wallet-integration/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Integrate documented Yemeni wallet APIs",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/api-rate-limiting",
+      "name": "api-rate-limiting",
+      "description": "Use when protect APIs with fair quotas.",
+      "path": "14-API-Integrations/api-rate-limiting/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Protect APIs with fair quotas",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "14-API-Integrations/integration-resilience",
+      "name": "integration-resilience",
+      "description": "Use when contain upstream failures.",
+      "path": "14-API-Integrations/integration-resilience/SKILL.md",
+      "category": "14-API-Integrations",
+      "when_to_use": "Contain upstream failures",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/playwright-testing",
+      "name": "playwright-testing",
+      "description": "Use when test browser user journeys.",
+      "path": "15-Testing-QA/playwright-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Test browser user journeys",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/vitest-testing",
+      "name": "vitest-testing",
+      "description": "Use when test TypeScript modules and components.",
+      "path": "15-Testing-QA/vitest-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Test TypeScript modules and components",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/jest-testing",
+      "name": "jest-testing",
+      "description": "Use when test JavaScript behavior.",
+      "path": "15-Testing-QA/jest-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Test JavaScript behavior",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/flutter-widget-testing",
+      "name": "flutter-widget-testing",
+      "description": "Use when verify Flutter widget behavior.",
+      "path": "15-Testing-QA/flutter-widget-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Verify Flutter widget behavior",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/flutter-integration-testing",
+      "name": "flutter-integration-testing",
+      "description": "Use when verify end to end mobile flows.",
+      "path": "15-Testing-QA/flutter-integration-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Verify end to end mobile flows",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/api-contract-testing",
+      "name": "api-contract-testing",
+      "description": "Use when verify producer consumer compatibility.",
+      "path": "15-Testing-QA/api-contract-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Verify producer consumer compatibility",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/k6-load-testing",
+      "name": "k6-load-testing",
+      "description": "Use when measure system behavior under authorized load.",
+      "path": "15-Testing-QA/k6-load-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Measure system behavior under authorized load",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/visual-regression-testing",
+      "name": "visual-regression-testing",
+      "description": "Use when detect unintended visual changes.",
+      "path": "15-Testing-QA/visual-regression-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Detect unintended visual changes",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/accessibility-testing",
+      "name": "accessibility-testing",
+      "description": "Use when verify inclusive interactions.",
+      "path": "15-Testing-QA/accessibility-testing/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Verify inclusive interactions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "15-Testing-QA/owasp-asvs-verification",
+      "name": "owasp-asvs-verification",
+      "description": "Use when assess application security controls.",
+      "path": "15-Testing-QA/owasp-asvs-verification/SKILL.md",
+      "category": "15-Testing-QA",
+      "when_to_use": "Assess application security controls",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/vercel-ai-sdk",
+      "name": "vercel-ai-sdk",
+      "description": "Use when build streaming AI features.",
+      "path": "16-AI-Application-Engineering/vercel-ai-sdk/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Build streaming AI features",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/langgraph-agents",
+      "name": "langgraph-agents",
+      "description": "Use when design explicit agent state graphs.",
+      "path": "16-AI-Application-Engineering/langgraph-agents/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Design explicit agent state graphs",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/rag-architecture",
+      "name": "rag-architecture",
+      "description": "Use when retrieve grounded context for generation.",
+      "path": "16-AI-Application-Engineering/rag-architecture/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Retrieve grounded context for generation",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/prompt-engineering",
+      "name": "prompt-engineering",
+      "description": "Use when design testable instruction templates.",
+      "path": "16-AI-Application-Engineering/prompt-engineering/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Design testable instruction templates",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/llm-evaluation",
+      "name": "llm-evaluation",
+      "description": "Use when measure AI quality reproducibly.",
+      "path": "16-AI-Application-Engineering/llm-evaluation/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Measure AI quality reproducibly",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/ai-guardrails",
+      "name": "ai-guardrails",
+      "description": "Use when enforce application safety boundaries.",
+      "path": "16-AI-Application-Engineering/ai-guardrails/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Enforce application safety boundaries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/structured-outputs",
+      "name": "structured-outputs",
+      "description": "Use when produce schema validated model responses.",
+      "path": "16-AI-Application-Engineering/structured-outputs/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Produce schema validated model responses",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/agent-memory",
+      "name": "agent-memory",
+      "description": "Use when manage scoped persistent agent context.",
+      "path": "16-AI-Application-Engineering/agent-memory/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Manage scoped persistent agent context",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/human-in-the-loop",
+      "name": "human-in-the-loop",
+      "description": "Use when require approval for consequential actions.",
+      "path": "16-AI-Application-Engineering/human-in-the-loop/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Require approval for consequential actions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "16-AI-Application-Engineering/ai-cost-optimization",
+      "name": "ai-cost-optimization",
+      "description": "Use when control inference spending.",
+      "path": "16-AI-Application-Engineering/ai-cost-optimization/SKILL.md",
+      "category": "16-AI-Application-Engineering",
+      "when_to_use": "Control inference spending",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/double-entry-accounting",
+      "name": "double-entry-accounting",
+      "description": "Use when model balanced journal entries.",
+      "path": "17-Financial-Engineering/double-entry-accounting/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Model balanced journal entries",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/financial-ledger",
+      "name": "financial-ledger",
+      "description": "Use when maintain authoritative immutable financial records.",
+      "path": "17-Financial-Engineering/financial-ledger/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Maintain authoritative immutable financial records",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/transaction-idempotency",
+      "name": "transaction-idempotency",
+      "description": "Use when prevent duplicate financial effects.",
+      "path": "17-Financial-Engineering/transaction-idempotency/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Prevent duplicate financial effects",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/payment-reconciliation",
+      "name": "payment-reconciliation",
+      "description": "Use when match provider and internal transactions.",
+      "path": "17-Financial-Engineering/payment-reconciliation/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Match provider and internal transactions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/pos-architecture",
+      "name": "pos-architecture",
+      "description": "Use when design reliable point of sale workflows.",
+      "path": "17-Financial-Engineering/pos-architecture/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Design reliable point of sale workflows",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/offline-first-sync",
+      "name": "offline-first-sync",
+      "description": "Use when synchronize local and remote state.",
+      "path": "17-Financial-Engineering/offline-first-sync/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Synchronize local and remote state",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/financial-audit-trails",
+      "name": "financial-audit-trails",
+      "description": "Use when preserve financial accountability.",
+      "path": "17-Financial-Engineering/financial-audit-trails/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Preserve financial accountability",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/inventory-management",
+      "name": "inventory-management",
+      "description": "Use when track stock movements and reservations.",
+      "path": "17-Financial-Engineering/inventory-management/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Track stock movements and reservations",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/currency-precision",
+      "name": "currency-precision",
+      "description": "Use when handle money without floating point errors.",
+      "path": "17-Financial-Engineering/currency-precision/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Handle money without floating point errors",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "17-Financial-Engineering/financial-reporting",
+      "name": "financial-reporting",
+      "description": "Use when generate reproducible financial statements.",
+      "path": "17-Financial-Engineering/financial-reporting/SKILL.md",
+      "category": "17-Financial-Engineering",
+      "when_to_use": "Generate reproducible financial statements",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/kayan-engineering-standards",
+      "name": "kayan-engineering-standards",
+      "description": "Use when apply Kayan production engineering conventions.",
+      "path": "18-Kayan-Project-Skills/kayan-engineering-standards/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Apply Kayan production engineering conventions",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/arabic-rtl-engineering",
+      "name": "arabic-rtl-engineering",
+      "description": "Use when build Arabic first interfaces.",
+      "path": "18-Kayan-Project-Skills/arabic-rtl-engineering/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Build Arabic first interfaces",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/nextjs-app-router",
+      "name": "nextjs-app-router",
+      "description": "Use when build Next.js App Router applications.",
+      "path": "18-Kayan-Project-Skills/nextjs-app-router/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Build Next.js App Router applications",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/typescript-advanced",
+      "name": "typescript-advanced",
+      "description": "Use when model precise TypeScript contracts.",
+      "path": "18-Kayan-Project-Skills/typescript-advanced/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Model precise TypeScript contracts",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/tailwind-engineering",
+      "name": "tailwind-engineering",
+      "description": "Use when build maintainable responsive utility styles.",
+      "path": "18-Kayan-Project-Skills/tailwind-engineering/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Build maintainable responsive utility styles",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/pwa-engineering",
+      "name": "pwa-engineering",
+      "description": "Use when build installable resilient web apps.",
+      "path": "18-Kayan-Project-Skills/pwa-engineering/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Build installable resilient web apps",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/krotak-pro-domain",
+      "name": "krotak-pro-domain",
+      "description": "Use when design MikroTik card sales and POS workflows.",
+      "path": "18-Kayan-Project-Skills/krotak-pro-domain/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Design MikroTik card sales and POS workflows",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/kayan-ai-domain",
+      "name": "kayan-ai-domain",
+      "description": "Use when design multi tenant customer service automation.",
+      "path": "18-Kayan-Project-Skills/kayan-ai-domain/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Design multi tenant customer service automation",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/qatshe-domain",
+      "name": "qatshe-domain",
+      "description": "Use when design accounting and delivery workflows.",
+      "path": "18-Kayan-Project-Skills/qatshe-domain/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Design accounting and delivery workflows",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
+      }
+    },
+    {
+      "id": "18-Kayan-Project-Skills/unified-super-admin",
+      "name": "unified-super-admin",
+      "description": "Use when design cross project administration PWA.",
+      "path": "18-Kayan-Project-Skills/unified-super-admin/SKILL.md",
+      "category": "18-Kayan-Project-Skills",
+      "when_to_use": "Design cross project administration PWA",
+      "required_tools": [],
+      "supported_platforms": [
+        "generic-agent"
+      ],
+      "dependencies": [],
+      "source": {
+        "repository": "https://github.com/KAYANSTOR/kayan-skill",
+        "upstream_path": null,
+        "commit_or_tag": null,
+        "license": "LicenseRef-Kayan-Owner-Terms",
+        "copied_verbatim": false,
+        "last_reviewed": null
+      },
+      "verification": {
+        "status": "authored-review-pending",
+        "checked_at": null,
+        "notes": "Original concise guidance; version-specific technical review and CI pending."
       }
     }
   ]
