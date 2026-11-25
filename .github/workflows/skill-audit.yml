@@ -1,0 +1,44 @@
+name: Skill audit
+on:
+  push:
+    branches: [main, 'integration/kayan-skill-auditor']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '15 2 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: skill-audit-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install auditor dependencies
+        run: python -m pip install -r tools/kayan-auditor/requirements.txt
+      - name: Test auditor
+        run: python -m unittest discover -s tools/kayan-auditor -p 'test_*.py' -v
+      - name: Audit catalog
+        run: python tools/kayan-auditor/audit.py . --out "$RUNNER_TEMP/kayan-audit"
+      - name: Verify tracked files unchanged
+        if: always()
+        run: git diff --exit-code HEAD --
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kayan-skill-audit-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/kayan-audit/
+          retention-days: 30
+          if-no-files-found: warn
