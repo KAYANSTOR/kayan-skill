@@ -342,6 +342,16 @@
       "status": "copied-selected",
       "commit_or_tag": "c96b5f6552dba32e4492307493ee613581430715",
       "license": "MIT"
+    },
+    {
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "categories": [
+        "08-Security-Auditing"
+      ],
+      "status": "copied-selected",
+      "commit_or_tag": "0fbfda5a91f4adc311daca25acc99132f40f0b6e",
+      "license": "see copied plugin LICENSE and NOTICE.md",
+      "notes": "Copied plugins/claude-security at version 0.13.1; review upstream changes before updating."
     }
   ]
 }

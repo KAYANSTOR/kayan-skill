@@ -9,6 +9,8 @@ description: Optimizes application performance across frontend, backend, queries
 
 Measure before optimizing. Performance work without measurement is guessing — and guessing leads to premature optimization that adds complexity without improving what matters. Profile first, identify the actual bottleneck, fix it, measure again. Optimize only what measurements prove matters.
 
+For a project-wide performance review, first read [the 31-point checklist](references/performance-31-checklist.md). Report every item as implemented, missing, needing improvement, or not applicable before changing code. Do not apply a technique merely because it appears on the checklist.
+
 ## When to Use
 
 - Performance requirements exist in the spec (load time budgets, response time SLAs)
